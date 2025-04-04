@@ -1,0 +1,131 @@
+.nav {
+    background-color:var(--white) ;
+}
+.delivery {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.delivery__title {
+    font-size: 2.6rem;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color:var(--rose-800) ;
+}
+.delivery__subtitle {
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1;
+    color:var(--rose-50) ;
+    margin-bottom: 2rem;
+}
+.delivery__text {
+    font-size: 1.4rem;
+    color:var(--rose-800) ;
+    line-height: 1.4;    
+}
+.meny {
+    padding-bottom: 2rem;
+}
+.meny__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.meny__item {
+    display: block;
+    border-top: 3px solid var( --stone-600);
+    padding: 3rem;
+    border-radius: 3%;
+    background-color: rgb(249, 247, 245);
+    box-shadow: 10px 5px 5px var(--rose-800);
+}
+.meny__item:nth-child(2){
+    border-top: 3px solid var( --stone-900);
+}
+.meny__item:nth-child(3){
+    border-top: 3px solid var(--stone-150);
+}
+.meny__item:nth-last-child(-n +1){
+    border-top: 3px solid var(--brown-800);
+}
+
+.meny__title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1;
+    color:var(--rose-50) ;
+    margin-bottom: 1rem;
+}
+.meny__text {
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color:var(--rose-800) ;
+    margin-bottom: 3rem;
+}
+.meny__svg {
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+    padding: 0 3rem;
+}
+    .nav {
+    background-color:var(--white) ;
+    padding: 7rem;
+} 
+    .delivery {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+    .delivery__title {
+    max-width: 51rem;
+    margin: 0 auto;
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 2;
+}
+    .delivery__subtitle {
+    margin: 0 auto;
+    max-width: 52rem;
+    font-size: 4.5rem;
+    color:var(--rose-50) ;
+    margin-bottom: 2rem;
+}
+    .delivery__text {
+    font-size: 2rem; 
+    max-width: 69rem;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+    .meny {
+    padding-bottom: 2rem;
+}
+    .meny__list {
+     justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+    .meny__item {
+    width: 30rem;
+    height: 30rem;
+}
+.meny__box{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+
+}
