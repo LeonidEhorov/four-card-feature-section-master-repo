@@ -1,6 +1,6 @@
-@import './fonts.css';
-@import './images.css';
 @import './normalize.css';
+@import './fonts.css';
 @import './vars.css';
-@import './mobile.css';
 @import './utils.css';
+@import './mobile.css'; 
+@import './images.css';

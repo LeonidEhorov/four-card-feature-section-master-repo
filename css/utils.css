@@ -47,7 +47,7 @@ button:hover {
 
 .container {
   padding: 0 2rem;
-  max-width: 102rem;
+  max-width: 110rem;
   margin: 0 auto;
 }
 
@@ -60,6 +60,11 @@ button:hover {
 .border {
   border-bottom: 1px solid var(--stone-600);
   padding-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+    padding: 0 3rem;
+}
 }
 /* 
 .visually-hidden {

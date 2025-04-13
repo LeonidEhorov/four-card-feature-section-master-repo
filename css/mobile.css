@@ -2,20 +2,21 @@
     background-color:var(--white) ;
 }
 .delivery {
+    text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 .delivery__title {
     font-size: 2.6rem;
     font-weight: 200;
-    line-height: 1;
+    /* line-height: 1; */
     margin-bottom: 1rem;
     color:var(--rose-800) ;
 }
 .delivery__subtitle {
     font-size: 2.3rem;
     font-weight: 900;
-    line-height: 1;
+    /* line-height: 1; */
     color:var(--rose-50) ;
     margin-bottom: 2rem;
 }
@@ -27,33 +28,38 @@
 .meny {
     padding-bottom: 2rem;
 }
-.meny__list {
+.meny__list, .meny__box {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+
 }
+
 .meny__item {
-    display: block;
-    border-top: 3px solid var( --stone-600);
+    /* display: block; */
+    border-top: 3px solid var(--stone-600);
     padding: 3rem;
     border-radius: 3%;
     background-color: rgb(249, 247, 245);
     box-shadow: 10px 5px 5px var(--rose-800);
 }
 .meny__item:nth-child(2){
-    border-top: 3px solid var( --stone-900);
+    /* border-top: 3px solid var( --stone-900); */
+    border-color: var(--stone-900);
 }
 .meny__item:nth-child(3){
-    border-top: 3px solid var(--stone-150);
+    /* border-top: 3px solid var(--stone-150); */
+    border-color: var(--stone-150);
 }
 .meny__item:nth-last-child(-n +1){
-    border-top: 3px solid var(--brown-800);
+    /* border-top: 3px solid var(--brown-800); */
+    border-color: var(--brown-800);
 }
 
 .meny__title {
     font-size: 2.3rem;
     font-weight: 600;
-    line-height: 1;
+    /* line-height: 1; */
     color:var(--rose-50) ;
     margin-bottom: 1rem;
 }
@@ -75,12 +81,9 @@
 
 
 
-@media screen and (min-width: 1024px) {
-    .container {
-    padding: 0 3rem;
-}
+@media screen and (min-width: 1440px) {
+
     .nav {
-    background-color:var(--white) ;
     padding: 7rem;
 } 
     .delivery {
@@ -108,21 +111,22 @@
     margin: 0 auto;
     text-align: center;
 }
-    .meny {
+    /* .meny {
     padding-bottom: 2rem;
-}
+} */
     .meny__list {
      justify-content: space-between;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
 }
     .meny__item {
     width: 30rem;
     height: 30rem;
+    flex-shrink: 0;
 }
 .meny__box{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 3rem;
 }
 
